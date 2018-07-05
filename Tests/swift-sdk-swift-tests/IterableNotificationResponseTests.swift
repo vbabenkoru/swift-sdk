@@ -198,12 +198,9 @@ class IterableNotificationResponseTests: XCTestCase {
         dateProvider.currentDate = Calendar.current.date(byAdding: Calendar.Component.hour, value: 24, to: Date())!
         XCTAssertNil(api.attributionInfo)
     }
-    
+
+    @available(iOS 10, *)
     func testLegacyDeeplinkPayload() {
-        guard @available(iOS 10, *) else {
-            return
-        }
-        
         let messageId = UUID().uuidString
         let userInfo: [AnyHashable : Any] = [
             "itbl" : [
