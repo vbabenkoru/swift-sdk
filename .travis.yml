@@ -6,7 +6,7 @@ before_install:
 
 script:
 #  - xcodebuild -workspace swift-sdk.xcworkspace -scheme swift-sdk -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' build test 
-  - xcodebuild -workspace swift-sdk.xcworkspace -scheme notification-extension -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' build test 
+  - xcodebuild -workspace swift-sdk.xcworkspace -scheme notification-extension -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' build test | xcpretty -f `xcpretty-travis-formatter`
 
 #| xcpretty -f `xcpretty-travis-formatter`
 
