@@ -5,9 +5,9 @@ before_install:
   - gem install xcpretty xcpretty-travis-formatter
 
 script:
-  - xcodebuild test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' -enableCodeCoverage YES -workspace swift-sdk.xcworkspace -scheme swift-sdk CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-  - xcodebuild test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.0' -enableCodeCoverage YES -workspace swift-sdk.xcworkspace -scheme swift-sdk CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
-  - xcodebuild test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' -enableCodeCoverage YES -workspace swift-sdk.xcworkspace -scheme notification-extension CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
+  - xcodebuild test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' -enableCodeCoverage YES -workspace swift-sdk.xcworkspace -scheme swift-sdk CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
+#  - xcodebuild test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.0' -enableCodeCoverage YES -workspace swift-sdk.xcworkspace -scheme swift-sdk CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
+#  - xcodebuild test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' -enableCodeCoverage YES -workspace swift-sdk.xcworkspace -scheme notification-extension CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
 
 #  - pod lib lint
 
