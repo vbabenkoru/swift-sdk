@@ -20,6 +20,48 @@
                ReferencedContainer = "container:swift-sdk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC90C4C320D8632D00EECA5D"
+               BuildableName = "IterableAppExtensions.framework"
+               BlueprintName = "notification-extension"
+               ReferencedContainer = "container:swift-sdk.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ACF560D220E443BF000AAC23"
+               BuildableName = "host-app.app"
+               BlueprintName = "host-app"
+               ReferencedContainer = "container:swift-sdk.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC90C4CB20D8632E00EECA5D"
+               BuildableName = "notification-extension-tests.xctest"
+               BlueprintName = "notification-extension-tests"
+               ReferencedContainer = "container:swift-sdk.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -35,6 +77,13 @@
             BlueprintIdentifier = "AC2263DE20CF49B8009800EB"
             BuildableName = "IterableSDK.framework"
             BlueprintName = "swift-sdk"
+            ReferencedContainer = "container:swift-sdk.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC90C4C320D8632D00EECA5D"
+            BuildableName = "IterableAppExtensions.framework"
+            BlueprintName = "notification-extension"
             ReferencedContainer = "container:swift-sdk.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
@@ -56,6 +105,16 @@
                BlueprintIdentifier = "AC7B143920D02D8700877BFE"
                BuildableName = "swift-sdk-objc-tests.xctest"
                BlueprintName = "swift-sdk-objc-tests"
+               ReferencedContainer = "container:swift-sdk.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC90C4CB20D8632E00EECA5D"
+               BuildableName = "notification-extension-tests.xctest"
+               BlueprintName = "notification-extension-tests"
                ReferencedContainer = "container:swift-sdk.xcodeproj">
             </BuildableReference>
          </TestableReference>
