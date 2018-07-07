@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+@objc open class TestFile: NSObject {
+}
