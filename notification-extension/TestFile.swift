@@ -9,4 +9,8 @@
 import Foundation
 
 @objc open class TestFile: NSObject {
+    
+    public override init() {
+        NSLog("blah")
+    }
 }
